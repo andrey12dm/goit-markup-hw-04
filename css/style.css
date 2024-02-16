@@ -194,10 +194,10 @@ a {
 }
 .box {
   position: relative;
-  overflow: hidden;
   width: 370px;
   height: 294px;
   margin: 0 auto;
+  overflow: hidden;
 }
 .overlay {
   position: absolute;
@@ -207,14 +207,17 @@ a {
   height: 100%;
   background-color: rgba(33, 150, 243, 0.9);
 
-  transform: translateX(0%);
+  transform: translateY(+100%);
   transition: transform 250ms ease-in-out;
 }
 .box:hover .overlay {
-  transition: translateX(100%);
+  transition: translateY(0);
 }
 .item .menu__tow :not(:last-child) {
   margin: 0 8px 0 0;
+}
+.bordre {
+  border: 1px solid #eee;
 }
 .innet ul {
   display: flex;
@@ -236,7 +239,7 @@ a {
   block-size: border-box;
   width: 370px;
   flex-shrink: 0;
-  border: 1px solid #eee;
+  /* border: 1px solid #eee; */
 }
 .innet ul li div h3 {
   margin: 20px 24px 0;
